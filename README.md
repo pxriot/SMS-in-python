@@ -4,4 +4,5 @@ you can only send one message per day
 
 (ex. 111-111-1111 )
 
-run "pip install logo" to run it.
+run "pip install logo" 
+run "pip install requests"
