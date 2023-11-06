@@ -11,7 +11,7 @@ def main():
 
     print('1: Send sms')
 
-    choices = input("\nPlease choice: ")
+    choices = input("\nChoose option: ")
 
     if choices == "1":
         if platform.system() == "Windows":
@@ -20,9 +20,9 @@ def main():
             os.system('clear')
 
         time.sleep(1)
-        smsnumb = input("Input the number of the target: ")
-        message = input("Please input the message: ")
-
+        print("(Ex. 111-111-1111)")
+        smsnumb = input('Enter a phone number: ')
+        message = input('Enter the message you want to send and press enter: ')
         resp = requests.post('https://textbelt.com/text', {
             'phone': f'{smsnumb}',
             'message': f'{message}',
